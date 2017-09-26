@@ -1,0 +1,16 @@
+﻿<Application x:Class="HerbstmatchRanking.App"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:local="clr-namespace:HerbstmatchRanking"
+             StartupUri="MainWindow.xaml">
+    <Application.Resources>
+        <FontFamily x:Key="NeuzeitLT">pack://application:,,,/Fonts/#NeuzeitSLTStd</FontFamily>
+        <!--<FontFamily x:Key="NeuzeitBD">pack://application:,,,/Fonts/#NeuzeitSLTStd</FontFamily>-->
+        <Style x:Key="Roost_Gray">
+            <Setter Property="TextElement.Foreground" Value="#5F625F"/>
+        </Style>
+        <Style x:Key="Roost_Blue">
+            <Setter Property="TextElement.Foreground" Value="#27628E"/>
+        </Style>
+    </Application.Resources>
+</Application>
