@@ -22,7 +22,7 @@
                         <DataTemplate>
                             <Grid>
                                 <StackPanel>
-                                    <Separator Background="#5F625F" Margin="0" Padding="0"/>
+                                    <Separator Background="#5F625F" Margin="0" Height="3" Padding="0"/>
                                     <Grid HorizontalAlignment="Stretch">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="240"/>

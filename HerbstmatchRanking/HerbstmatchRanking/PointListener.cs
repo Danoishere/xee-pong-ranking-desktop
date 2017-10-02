@@ -1,6 +1,7 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.ComponentModel;
+using System.Diagnostics;
 using System.Linq;
 using System.Net;
 using System.Net.Sockets;
@@ -17,9 +18,28 @@ namespace HerbstmatchRanking
 
         public PointListener()
         {
+            PermitUrlAccess();
+
             Listener = new HttpListener();
-            Listener.Prefixes.Add("http://" + GetLocalIPAddress() + "/");
-            Console.WriteLine("Listening on " + "http://" + GetLocalIPAddress() + "/");
+            Listener.Prefixes.Add("http://" + GetLocalIPAddress() + ":8080/");
+            Console.WriteLine("Listening on " + "http://" + GetLocalIPAddress() + ":8080/");
+        }
+
+        private void PermitUrlAccess()
+        {
+            Process cmd = new Process();
+            cmd.StartInfo.FileName = "cmd.exe";
+            cmd.StartInfo.RedirectStandardInput = true;
+            cmd.StartInfo.RedirectStandardOutput = true;
+            cmd.StartInfo.CreateNoWindow = true;
+            cmd.StartInfo.UseShellExecute = false;
+            cmd.Start();
+
+            cmd.StandardInput.WriteLine("netsh http add urlacl url=http://" + GetLocalIPAddress() + ":8080/ sddl=D:(A;;GX;;;S-1-1-0) listen=yes");
+            cmd.StandardInput.Flush();
+            cmd.StandardInput.Close();
+            cmd.WaitForExit();
+            Console.WriteLine(cmd.StandardOutput.ReadToEnd());
         }
 
         public async void StartListening()
