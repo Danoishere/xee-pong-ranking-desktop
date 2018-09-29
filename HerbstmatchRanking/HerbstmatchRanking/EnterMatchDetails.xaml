@@ -11,19 +11,19 @@
         Title="EnterMatchDetails" Height="700" Width="1400">
     <Grid Margin="40">
         <StackPanel>
-            <Label Content="Neues Matchresultat" FontFamily="NeuzeitLT" Style="{StaticResource Roost_Gray}" FontSize="60"/>
-            <Label Name="Punkte" Content="123 Punkte" FontWeight="Bold" FontFamily="NeuzeitLT"  FontSize="60" Style="{StaticResource Roost_Blue}"/>
+            <Label Content="NEUES MATCHRESULTAT" FontFamily="NeuzeitLT" FontSize="60"/>
+            <Label Name="Punkte" Content="123 Punkte" FontWeight="Bold" FontFamily="NeuzeitLT"  FontSize="60" />
             <Separator Margin="50"></Separator>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="40, 10">
-                <Label Content="Name" FontSize="50" Width="200"/>
+                <Label Content="NAME" FontSize="50" Width="200"/>
                 <TextBox Name="TxtName"  FontSize="50" Foreground="#5F625F" FontFamily="NeuzeitLT" HorizontalAlignment="Stretch" Width="1030" />
             </StackPanel>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="40,10">
-                <Label Content="Email" FontSize="50" Width="200"/>
+                <Label Content="EMAIL" FontSize="50" Width="200"/>
                 <TextBox Name="TxtMail"  FontSize="50" Foreground="#5F625F" FontFamily="NeuzeitLT" HorizontalAlignment="Stretch" Width="1030" />
             </StackPanel>
-            <Button HorizontalAlignment="Right" Background="#27628E" Margin="50" Click="Button_Click">
-                <Label FontFamily="NeuzeitLT" Foreground="White" FontSize="50" Content="Speichern"></Label></Button>
+            <Button HorizontalAlignment="Right"  Margin="50" Click="Button_Click">
+                <Label FontFamily="NeuzeitLT" Foreground="White" FontSize="50" Content="SPEICHERN"></Label></Button>
         </StackPanel>
     </Grid>
 </Window>

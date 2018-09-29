@@ -19,12 +19,12 @@ namespace HerbstmatchRanking
         public EnterMatchDetails(int points)
         {
             InitializeComponent();
-            Punkte.Content = points + " Punkte";
+            Punkte.Content = points + " PUNKTE";
         }
 
         private void Button_Click(object sender, RoutedEventArgs e)
         {
-            PlayerName = string.IsNullOrEmpty(TxtName.Text)? "<Kein Name>" : TxtName.Text;
+            PlayerName = string.IsNullOrEmpty(TxtName.Text)? "<KEIN NAME>" : TxtName.Text;
             Mail = string.IsNullOrEmpty(TxtMail.Text) ? "" + TxtMail.Text : TxtMail.Text;
 
             Close();

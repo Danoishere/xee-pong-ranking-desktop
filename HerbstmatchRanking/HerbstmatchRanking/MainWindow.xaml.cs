@@ -83,6 +83,7 @@ namespace HerbstmatchRanking
                 var rankCounter = 1;
                 foreach (var player in top10)
                 {
+                    player.Name = player.Name.ToUpper();
                     player.Rank = rankCounter;
                     ParticipantsTop10.Add(player);
                     rankCounter++;
@@ -93,7 +94,7 @@ namespace HerbstmatchRanking
 
         private void MainWindow_KeyDown(object sender, KeyEventArgs e)
         {
-            if(e.Key == Key.Escape || e.Key == Key.Enter)
+            if(e.Key == Key.Escape)
             { 
                 Application.Current.Shutdown();
             }
