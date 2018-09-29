@@ -12,11 +12,9 @@
         <Grid Height="1080" Width="1920">
             <StackPanel>
                 <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                    <Label Content="R" FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Gray}" FontSize="120" Margin="0,0,0,0" Padding="0" HorizontalContentAlignment="Center"/>
-                    <Label Content="oo" FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Blue}" FontSize="120" Margin="0,0,0,0" Padding="0" HorizontalContentAlignment="Center"/>
-                    <Label Content="st." FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Gray}" FontSize="120" Margin="0,0,0,0" Padding="0" HorizontalContentAlignment="Center"/>
+                    <Label Content="ROOST" FontFamily="{StaticResource NeuzeitLT}"  Foreground="Black" FontSize="120" Margin="0,0,0,0" Padding="0" HorizontalContentAlignment="Center"/>
                 </StackPanel>
-                <Label Content="Herbstmatch" FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Gray}" FontSize="100" Margin="0" Padding="0" HorizontalContentAlignment="Center" FontWeight="Bold" />
+                <Label Content="Gewinne eine XEE-Sonnenbrille" FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Gray}" FontSize="100" Margin="0" Padding="0" HorizontalContentAlignment="Center" FontWeight="Bold" />
                 <ItemsControl ItemsSource="{Binding ParticipantsTop10}" Margin="40,10,40,0">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
