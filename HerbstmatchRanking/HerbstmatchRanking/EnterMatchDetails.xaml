@@ -7,6 +7,7 @@
         mc:Ignorable="d"
         WindowStyle="None"
         WindowStartupLocation="Manual"
+        Background="#FFDD00"
         Initialized="Window_Initialized"
         Title="EnterMatchDetails" Height="700" Width="1400">
     <Grid Margin="40">
@@ -23,7 +24,7 @@
                 <TextBox Name="TxtMail"  FontSize="50" Foreground="#5F625F" FontFamily="NeuzeitLT" HorizontalAlignment="Stretch" Width="1030" />
             </StackPanel>
             <Button HorizontalAlignment="Right"  Margin="50" Click="Button_Click">
-                <Label FontFamily="NeuzeitLT" Foreground="White" FontSize="50" Content="SPEICHERN"></Label></Button>
+                <Label FontFamily="NeuzeitLT" Background="Black" Foreground="White" FontSize="50" Content="SPEICHERN"></Label></Button>
         </StackPanel>
     </Grid>
 </Window>

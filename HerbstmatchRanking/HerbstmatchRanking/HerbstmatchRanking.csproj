@@ -110,6 +110,7 @@
       <LastGenOutput>Settings.Designer.cs</LastGenOutput>
     </None>
     <AppDesigner Include="Properties\" />
+    <Resource Include="Roost_Logo_White.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="App.config" />

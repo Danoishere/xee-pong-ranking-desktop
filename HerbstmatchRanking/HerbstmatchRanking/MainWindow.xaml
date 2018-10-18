@@ -7,20 +7,17 @@
         mc:Ignorable="d"
         WindowStyle="None"
         WindowState="Maximized"
-        Title="MainWindow" Height="1080" Width="1920" SnapsToDevicePixels="True" Loaded="Window_Loaded">
+        Title="MainWindow" Height="1080" Width="1920" Background="Black" SnapsToDevicePixels="True" Loaded="Window_Loaded">
     <Viewbox >
         <Grid Height="1080" Width="1920">
             <StackPanel>
-                <StackPanel Orientation="Horizontal" HorizontalAlignment="Center" Margin="10">
-                    <Label Content="ROOST" FontFamily="{StaticResource NeuzeitLT}"  Foreground="Black" FontSize="120" Margin="0,0,0,0" Padding="0" HorizontalContentAlignment="Center"/>
-                </StackPanel>
-                <Label Content="GEWINNE EINE XEE-SONNENBRILLE" FontFamily="{StaticResource NeuzeitLT}"  Style="{DynamicResource Roost_Gray}" FontSize="100" Margin="0" Padding="0" HorizontalContentAlignment="Center" FontWeight="Bold" />
-                <ItemsControl ItemsSource="{Binding ParticipantsTop10}" Margin="40,10,40,0">
+                <Image Source="Roost_Logo_White.png" RenderOptions.EdgeMode="Aliased" Width="700"/>
+                <ItemsControl ItemsSource="{Binding ParticipantsTop10}" Margin="40,50,40,0">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
                             <Grid>
                                 <StackPanel>
-                                    <Separator Background="#5F625F" Margin="0" Height="3" Padding="0"/>
+                                    <Grid Background="#FFDD00" Width="Auto" Margin="0" Height="2"/>
                                     <Grid HorizontalAlignment="Stretch">
                                         <Grid.ColumnDefinitions>
                                             <ColumnDefinition Width="240"/>
@@ -31,14 +28,14 @@
                                         <Label Grid.Column="0" Content="{Binding RankString}" FontWeight="Bold" FontSize="50" Style="{StaticResource Roost_Gray}"/>
                                         <Label Grid.Column="1" Content="{Binding Points}" HorizontalContentAlignment="Right" FontSize="50" Style="{StaticResource Roost_Gray}" />
                                         <Label Grid.Column="2" Content="Punkte" FontSize="50" Style="{StaticResource Roost_Gray}" />
-                                        <Label Grid.Column="3" Content="{Binding Name}" FontSize="50" Style="{StaticResource Roost_Blue}" FontWeight="Bold" />
+                                        <Label Grid.Column="3" Content="{Binding Name}" FontSize="50" Style="{StaticResource Roost_Gray}" FontWeight="Bold" />
                                     </Grid>
                                 </StackPanel>
                             </Grid>
                         </DataTemplate>
                     </ItemsControl.ItemTemplate>
                 </ItemsControl>
-                <Separator Background="#5F625F" Margin="40,0,40,40"/>
+                <Grid Background="#FFDD00" Width="Auto" Margin="40,0,40,40" Height="2"/>
             </StackPanel>
         </Grid>
     </Viewbox>

@@ -7,10 +7,10 @@
         <FontFamily x:Key="NeuzeitLT">pack://application:,,,/Fonts/#NeuzeitSLTStd</FontFamily>
         <!--<FontFamily x:Key="NeuzeitBD">pack://application:,,,/Fonts/#NeuzeitSLTStd</FontFamily>-->
         <Style x:Key="Roost_Gray">
-            <Setter Property="TextElement.Foreground" Value="#5F625F"/>
+            <Setter Property="TextElement.Foreground" Value="#FFFFFF"/>
         </Style>
         <Style x:Key="Roost_Blue">
-            <Setter Property="TextElement.Foreground" Value="#27628E"/>
+            <Setter Property="TextElement.Foreground" Value="#FFDD00"/>
         </Style>
     </Application.Resources>
 </Application>
