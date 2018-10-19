@@ -6,13 +6,16 @@
         xmlns:local="clr-namespace:HerbstmatchRanking"
         mc:Ignorable="d"
         WindowStyle="None"
+        BorderThickness="1"
+        BorderBrush="Black"
+        ResizeMode="NoResize"
         WindowStartupLocation="Manual"
         Background="#FFDD00"
         Initialized="Window_Initialized"
         Title="EnterMatchDetails" Height="700" Width="1400">
     <Grid Margin="40">
         <StackPanel>
-            <Label Content="NEUES MATCHRESULTAT" FontFamily="NeuzeitLT" FontSize="60"/>
+            <Label Content="RESULTAT" FontFamily="NeuzeitLT" FontSize="60"/>
             <Label Name="Punkte" Content="123 Punkte" FontWeight="Bold" FontFamily="NeuzeitLT"  FontSize="60" />
             <Separator Margin="50"></Separator>
             <StackPanel Orientation="Horizontal" HorizontalAlignment="Stretch" Margin="40, 10">

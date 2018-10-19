@@ -50,6 +50,7 @@ namespace HerbstmatchRanking
             if (!string.IsNullOrEmpty(points) && int.TryParse(points, out pointInt))
             {
                 var enterMatchDetails = new EnterMatchDetails(int.Parse(points));
+                enterMatchDetails.Owner = this;
                 enterMatchDetails.ShowDialog();
                 Focus();
                 File.AppendAllLines(RESULT_FILE_PATH, new string[] { enterMatchDetails.PlayerName + ";" + points + ";" + enterMatchDetails.Mail });
