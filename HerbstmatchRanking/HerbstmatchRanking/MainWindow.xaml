@@ -7,11 +7,11 @@
         mc:Ignorable="d"
         WindowStyle="None"
         WindowState="Maximized"
-        Title="MainWindow" Height="1080" Width="1920" Background="Black" SnapsToDevicePixels="True" Loaded="Window_Loaded">
+        Title="MainWindow" Height="1080" Width="1920" Background="Black" Loaded="Window_Loaded">
     <Viewbox >
         <Grid Height="1080" Width="1920">
             <StackPanel>
-                <Image Source="Roost_Logo_Yellow.png" RenderOptions.EdgeMode="Aliased" Width="700"/>
+                <Image Source="Roost_Logo_Yellow.png" RenderOptions.BitmapScalingMode="HighQuality" Width="700"/>
                 <ItemsControl ItemsSource="{Binding ParticipantsTop10}" Margin="40,50,40,0">
                     <ItemsControl.ItemTemplate>
                         <DataTemplate>
